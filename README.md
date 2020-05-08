@@ -1,4 +1,4 @@
-###**Technical specifications and database model for a restaurant project**
+### **Technical specifications and database model for a restaurant project**
 
 #### **Description**
 
