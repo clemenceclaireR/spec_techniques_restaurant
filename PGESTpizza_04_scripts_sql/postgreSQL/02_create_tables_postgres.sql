@@ -1,4 +1,3 @@
-
 --
 -- Table structure for table `access_rights`
 --
