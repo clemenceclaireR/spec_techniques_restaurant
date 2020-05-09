@@ -1,3 +1,6 @@
+-- ------- command with command line ----------
+--psql -U postgres -h localhost -d oc_restaurant -f 02_create_tables_postgres.sql 
+
 --
 -- Table structure for table `access_rights`
 --

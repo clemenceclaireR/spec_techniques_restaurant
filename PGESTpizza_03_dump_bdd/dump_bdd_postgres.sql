@@ -1,3 +1,6 @@
+-- ------------ restore command for command line -------------------
+-- psql -U <user> oc_restaurant -h localhost -f dump_bdd_postgres.sql 
+
 --
 -- PostgreSQL database dump
 --
@@ -5,7 +8,7 @@
 -- Dumped from database version 11.7
 -- Dumped by pg_dump version 12.2
 
--- Started on 2020-05-03 15:29:04
+-- Started on 2020-05-09 11:34:35
 
 SET statement_timeout = 0;
 SET lock_timeout = 0;
@@ -20,7 +23,7 @@ SET row_security = off;
 
 DROP DATABASE oc_restaurant;
 --
--- TOC entry 2957 (class 1262 OID 20394)
+-- TOC entry 2957 (class 1262 OID 20796)
 -- Name: oc_restaurant; Type: DATABASE; Schema: -; Owner: oc_user
 --
 
@@ -45,7 +48,7 @@ SET row_security = off;
 SET default_tablespace = '';
 
 --
--- TOC entry 196 (class 1259 OID 20596)
+-- TOC entry 196 (class 1259 OID 20797)
 -- Name: access_rights; Type: TABLE; Schema: public; Owner: postgres
 --
 
@@ -58,7 +61,7 @@ CREATE TABLE public.access_rights (
 ALTER TABLE public.access_rights OWNER TO postgres;
 
 --
--- TOC entry 201 (class 1259 OID 20621)
+-- TOC entry 201 (class 1259 OID 20822)
 -- Name: account; Type: TABLE; Schema: public; Owner: postgres
 --
 
@@ -79,7 +82,7 @@ CREATE TABLE public.account (
 ALTER TABLE public.account OWNER TO postgres;
 
 --
--- TOC entry 200 (class 1259 OID 20616)
+-- TOC entry 200 (class 1259 OID 20817)
 -- Name: article; Type: TABLE; Schema: public; Owner: postgres
 --
 
@@ -96,7 +99,7 @@ CREATE TABLE public.article (
 ALTER TABLE public.article OWNER TO postgres;
 
 --
--- TOC entry 208 (class 1259 OID 20722)
+-- TOC entry 208 (class 1259 OID 20923)
 -- Name: bill; Type: TABLE; Schema: public; Owner: postgres
 --
 
@@ -117,7 +120,7 @@ CREATE TABLE public.bill (
 ALTER TABLE public.bill OWNER TO postgres;
 
 --
--- TOC entry 210 (class 1259 OID 20756)
+-- TOC entry 210 (class 1259 OID 20957)
 -- Name: command_line; Type: TABLE; Schema: public; Owner: postgres
 --
 
@@ -132,7 +135,7 @@ CREATE TABLE public.command_line (
 ALTER TABLE public.command_line OWNER TO postgres;
 
 --
--- TOC entry 205 (class 1259 OID 20680)
+-- TOC entry 205 (class 1259 OID 20881)
 -- Name: customer; Type: TABLE; Schema: public; Owner: postgres
 --
 
@@ -146,7 +149,7 @@ CREATE TABLE public.customer (
 ALTER TABLE public.customer OWNER TO postgres;
 
 --
--- TOC entry 209 (class 1259 OID 20733)
+-- TOC entry 209 (class 1259 OID 20934)
 -- Name: delivery; Type: TABLE; Schema: public; Owner: postgres
 --
 
@@ -162,7 +165,7 @@ CREATE TABLE public.delivery (
 ALTER TABLE public.delivery OWNER TO postgres;
 
 --
--- TOC entry 203 (class 1259 OID 20658)
+-- TOC entry 203 (class 1259 OID 20859)
 -- Name: ingredient; Type: TABLE; Schema: public; Owner: postgres
 --
 
@@ -176,7 +179,7 @@ CREATE TABLE public.ingredient (
 ALTER TABLE public.ingredient OWNER TO postgres;
 
 --
--- TOC entry 204 (class 1259 OID 20663)
+-- TOC entry 204 (class 1259 OID 20864)
 -- Name: orders; Type: TABLE; Schema: public; Owner: postgres
 --
 
@@ -192,7 +195,7 @@ CREATE TABLE public.orders (
 ALTER TABLE public.orders OWNER TO postgres;
 
 --
--- TOC entry 197 (class 1259 OID 20601)
+-- TOC entry 197 (class 1259 OID 20802)
 -- Name: profession_title; Type: TABLE; Schema: public; Owner: postgres
 --
 
@@ -205,7 +208,7 @@ CREATE TABLE public.profession_title (
 ALTER TABLE public.profession_title OWNER TO postgres;
 
 --
--- TOC entry 207 (class 1259 OID 20705)
+-- TOC entry 207 (class 1259 OID 20906)
 -- Name: quantity_ingredient_recipe; Type: TABLE; Schema: public; Owner: postgres
 --
 
@@ -220,7 +223,7 @@ CREATE TABLE public.quantity_ingredient_recipe (
 ALTER TABLE public.quantity_ingredient_recipe OWNER TO postgres;
 
 --
--- TOC entry 206 (class 1259 OID 20691)
+-- TOC entry 206 (class 1259 OID 20892)
 -- Name: recipe; Type: TABLE; Schema: public; Owner: postgres
 --
 
@@ -235,7 +238,7 @@ CREATE TABLE public.recipe (
 ALTER TABLE public.recipe OWNER TO postgres;
 
 --
--- TOC entry 198 (class 1259 OID 20606)
+-- TOC entry 198 (class 1259 OID 20807)
 -- Name: restaurant; Type: TABLE; Schema: public; Owner: postgres
 --
 
@@ -252,7 +255,7 @@ CREATE TABLE public.restaurant (
 ALTER TABLE public.restaurant OWNER TO postgres;
 
 --
--- TOC entry 202 (class 1259 OID 20635)
+-- TOC entry 202 (class 1259 OID 20836)
 -- Name: staff; Type: TABLE; Schema: public; Owner: postgres
 --
 
@@ -267,7 +270,7 @@ CREATE TABLE public.staff (
 ALTER TABLE public.staff OWNER TO postgres;
 
 --
--- TOC entry 199 (class 1259 OID 20611)
+-- TOC entry 199 (class 1259 OID 20812)
 -- Name: status; Type: TABLE; Schema: public; Owner: postgres
 --
 
@@ -280,7 +283,7 @@ CREATE TABLE public.status (
 ALTER TABLE public.status OWNER TO postgres;
 
 --
--- TOC entry 211 (class 1259 OID 20773)
+-- TOC entry 211 (class 1259 OID 20974)
 -- Name: stock; Type: TABLE; Schema: public; Owner: postgres
 --
 
@@ -298,7 +301,7 @@ CREATE TABLE public.stock (
 ALTER TABLE public.stock OWNER TO postgres;
 
 --
--- TOC entry 2936 (class 0 OID 20596)
+-- TOC entry 2936 (class 0 OID 20797)
 -- Dependencies: 196
 -- Data for Name: access_rights; Type: TABLE DATA; Schema: public; Owner: postgres
 --
@@ -310,7 +313,7 @@ INSERT INTO public.access_rights (id, grade) VALUES (4, 'Customer');
 
 
 --
--- TOC entry 2941 (class 0 OID 20621)
+-- TOC entry 2941 (class 0 OID 20822)
 -- Dependencies: 201
 -- Data for Name: account; Type: TABLE DATA; Schema: public; Owner: postgres
 --
@@ -333,7 +336,7 @@ INSERT INTO public.account (id, last_name, first_name, password, email, phone_nu
 
 
 --
--- TOC entry 2940 (class 0 OID 20616)
+-- TOC entry 2940 (class 0 OID 20817)
 -- Dependencies: 200
 -- Data for Name: article; Type: TABLE DATA; Schema: public; Owner: postgres
 --
@@ -347,7 +350,7 @@ INSERT INTO public.article (id, name, ean13_code, unit_price_excluding_vat, unit
 
 
 --
--- TOC entry 2948 (class 0 OID 20722)
+-- TOC entry 2948 (class 0 OID 20923)
 -- Dependencies: 208
 -- Data for Name: bill; Type: TABLE DATA; Schema: public; Owner: postgres
 --
@@ -360,7 +363,7 @@ INSERT INTO public.bill (number_id, num_vat, num_siren, price_excluding_vat, pri
 
 
 --
--- TOC entry 2950 (class 0 OID 20756)
+-- TOC entry 2950 (class 0 OID 20957)
 -- Dependencies: 210
 -- Data for Name: command_line; Type: TABLE DATA; Schema: public; Owner: postgres
 --
@@ -376,7 +379,7 @@ INSERT INTO public.command_line (id, order_id, article_id, quantity) VALUES (8, 
 
 
 --
--- TOC entry 2945 (class 0 OID 20680)
+-- TOC entry 2945 (class 0 OID 20881)
 -- Dependencies: 205
 -- Data for Name: customer; Type: TABLE DATA; Schema: public; Owner: postgres
 --
@@ -389,7 +392,7 @@ INSERT INTO public.customer (id, delivery_address, account_id) VALUES (5, '51, R
 
 
 --
--- TOC entry 2949 (class 0 OID 20733)
+-- TOC entry 2949 (class 0 OID 20934)
 -- Dependencies: 209
 -- Data for Name: delivery; Type: TABLE DATA; Schema: public; Owner: postgres
 --
@@ -401,7 +404,7 @@ INSERT INTO public.delivery (id, address_client, id_client, employee_id, order_i
 
 
 --
--- TOC entry 2943 (class 0 OID 20658)
+-- TOC entry 2943 (class 0 OID 20859)
 -- Dependencies: 203
 -- Data for Name: ingredient; Type: TABLE DATA; Schema: public; Owner: postgres
 --
@@ -416,7 +419,7 @@ INSERT INTO public.ingredient (id, name, designation) VALUES (7, 'Merguez', 'mer
 
 
 --
--- TOC entry 2944 (class 0 OID 20663)
+-- TOC entry 2944 (class 0 OID 20864)
 -- Dependencies: 204
 -- Data for Name: orders; Type: TABLE DATA; Schema: public; Owner: postgres
 --
@@ -430,7 +433,7 @@ INSERT INTO public.orders (id, num_command, status, paid_for, restaurant_id) VAL
 
 
 --
--- TOC entry 2937 (class 0 OID 20601)
+-- TOC entry 2937 (class 0 OID 20802)
 -- Dependencies: 197
 -- Data for Name: profession_title; Type: TABLE DATA; Schema: public; Owner: postgres
 --
@@ -442,7 +445,7 @@ INSERT INTO public.profession_title (id, title) VALUES (4, 'Cook');
 
 
 --
--- TOC entry 2947 (class 0 OID 20705)
+-- TOC entry 2947 (class 0 OID 20906)
 -- Dependencies: 207
 -- Data for Name: quantity_ingredient_recipe; Type: TABLE DATA; Schema: public; Owner: postgres
 --
@@ -457,7 +460,7 @@ INSERT INTO public.quantity_ingredient_recipe (id, quantity_ingredient_recipe, i
 
 
 --
--- TOC entry 2946 (class 0 OID 20691)
+-- TOC entry 2946 (class 0 OID 20892)
 -- Dependencies: 206
 -- Data for Name: recipe; Type: TABLE DATA; Schema: public; Owner: postgres
 --
@@ -480,7 +483,7 @@ INSERT INTO public.recipe (id, name, recipe, article_id) VALUES (3, 'Pizza Royal
 
 
 --
--- TOC entry 2938 (class 0 OID 20606)
+-- TOC entry 2938 (class 0 OID 20807)
 -- Dependencies: 198
 -- Data for Name: restaurant; Type: TABLE DATA; Schema: public; Owner: postgres
 --
@@ -494,7 +497,7 @@ INSERT INTO public.restaurant (id, email_address, phone_number, street, city, po
 
 
 --
--- TOC entry 2942 (class 0 OID 20635)
+-- TOC entry 2942 (class 0 OID 20836)
 -- Dependencies: 202
 -- Data for Name: staff; Type: TABLE DATA; Schema: public; Owner: postgres
 --
@@ -512,7 +515,7 @@ INSERT INTO public.staff (id, restaurant_id, account_id, profession_title) VALUE
 
 
 --
--- TOC entry 2939 (class 0 OID 20611)
+-- TOC entry 2939 (class 0 OID 20812)
 -- Dependencies: 199
 -- Data for Name: status; Type: TABLE DATA; Schema: public; Owner: postgres
 --
@@ -525,7 +528,7 @@ INSERT INTO public.status (id, status) VALUES (5, 'Livrée');
 
 
 --
--- TOC entry 2951 (class 0 OID 20773)
+-- TOC entry 2951 (class 0 OID 20974)
 -- Dependencies: 211
 -- Data for Name: stock; Type: TABLE DATA; Schema: public; Owner: postgres
 --
@@ -548,7 +551,7 @@ INSERT INTO public.stock (id, quantity, reception_date, expiry_date, article_id,
 
 
 --
--- TOC entry 2746 (class 2606 OID 20600)
+-- TOC entry 2746 (class 2606 OID 20801)
 -- Name: access_rights access_rights_pkey; Type: CONSTRAINT; Schema: public; Owner: postgres
 --
 
@@ -557,7 +560,7 @@ ALTER TABLE ONLY public.access_rights
 
 
 --
--- TOC entry 2757 (class 2606 OID 20628)
+-- TOC entry 2757 (class 2606 OID 20829)
 -- Name: account account_pkey; Type: CONSTRAINT; Schema: public; Owner: postgres
 --
 
@@ -566,7 +569,7 @@ ALTER TABLE ONLY public.account
 
 
 --
--- TOC entry 2754 (class 2606 OID 20620)
+-- TOC entry 2754 (class 2606 OID 20821)
 -- Name: article article_pkey; Type: CONSTRAINT; Schema: public; Owner: postgres
 --
 
@@ -575,7 +578,7 @@ ALTER TABLE ONLY public.article
 
 
 --
--- TOC entry 2781 (class 2606 OID 20726)
+-- TOC entry 2781 (class 2606 OID 20927)
 -- Name: bill bill_pkey; Type: CONSTRAINT; Schema: public; Owner: postgres
 --
 
@@ -584,7 +587,7 @@ ALTER TABLE ONLY public.bill
 
 
 --
--- TOC entry 2790 (class 2606 OID 20760)
+-- TOC entry 2790 (class 2606 OID 20961)
 -- Name: command_line command_line_pkey; Type: CONSTRAINT; Schema: public; Owner: postgres
 --
 
@@ -593,7 +596,7 @@ ALTER TABLE ONLY public.command_line
 
 
 --
--- TOC entry 2771 (class 2606 OID 20684)
+-- TOC entry 2771 (class 2606 OID 20885)
 -- Name: customer customer_pkey; Type: CONSTRAINT; Schema: public; Owner: postgres
 --
 
@@ -602,7 +605,7 @@ ALTER TABLE ONLY public.customer
 
 
 --
--- TOC entry 2786 (class 2606 OID 20737)
+-- TOC entry 2786 (class 2606 OID 20938)
 -- Name: delivery delivery_pkey; Type: CONSTRAINT; Schema: public; Owner: postgres
 --
 
@@ -611,7 +614,7 @@ ALTER TABLE ONLY public.delivery
 
 
 --
--- TOC entry 2764 (class 2606 OID 20662)
+-- TOC entry 2764 (class 2606 OID 20863)
 -- Name: ingredient ingredient_pkey; Type: CONSTRAINT; Schema: public; Owner: postgres
 --
 
@@ -620,7 +623,7 @@ ALTER TABLE ONLY public.ingredient
 
 
 --
--- TOC entry 2768 (class 2606 OID 20667)
+-- TOC entry 2768 (class 2606 OID 20868)
 -- Name: orders orders_pkey; Type: CONSTRAINT; Schema: public; Owner: postgres
 --
 
@@ -629,7 +632,7 @@ ALTER TABLE ONLY public.orders
 
 
 --
--- TOC entry 2748 (class 2606 OID 20605)
+-- TOC entry 2748 (class 2606 OID 20806)
 -- Name: profession_title profession_title_pkey; Type: CONSTRAINT; Schema: public; Owner: postgres
 --
 
@@ -638,7 +641,7 @@ ALTER TABLE ONLY public.profession_title
 
 
 --
--- TOC entry 2778 (class 2606 OID 20709)
+-- TOC entry 2778 (class 2606 OID 20910)
 -- Name: quantity_ingredient_recipe quantity_ingredient_recipe_pkey; Type: CONSTRAINT; Schema: public; Owner: postgres
 --
 
@@ -647,7 +650,7 @@ ALTER TABLE ONLY public.quantity_ingredient_recipe
 
 
 --
--- TOC entry 2774 (class 2606 OID 20698)
+-- TOC entry 2774 (class 2606 OID 20899)
 -- Name: recipe recipe_pkey; Type: CONSTRAINT; Schema: public; Owner: postgres
 --
 
@@ -656,7 +659,7 @@ ALTER TABLE ONLY public.recipe
 
 
 --
--- TOC entry 2750 (class 2606 OID 20610)
+-- TOC entry 2750 (class 2606 OID 20811)
 -- Name: restaurant restaurant_pkey; Type: CONSTRAINT; Schema: public; Owner: postgres
 --
 
@@ -665,7 +668,7 @@ ALTER TABLE ONLY public.restaurant
 
 
 --
--- TOC entry 2762 (class 2606 OID 20639)
+-- TOC entry 2762 (class 2606 OID 20840)
 -- Name: staff staff_pkey; Type: CONSTRAINT; Schema: public; Owner: postgres
 --
 
@@ -674,7 +677,7 @@ ALTER TABLE ONLY public.staff
 
 
 --
--- TOC entry 2752 (class 2606 OID 20615)
+-- TOC entry 2752 (class 2606 OID 20816)
 -- Name: status status_pkey; Type: CONSTRAINT; Schema: public; Owner: postgres
 --
 
@@ -683,7 +686,7 @@ ALTER TABLE ONLY public.status
 
 
 --
--- TOC entry 2795 (class 2606 OID 20777)
+-- TOC entry 2795 (class 2606 OID 20978)
 -- Name: stock stock_pkey; Type: CONSTRAINT; Schema: public; Owner: postgres
 --
 
@@ -692,7 +695,7 @@ ALTER TABLE ONLY public.stock
 
 
 --
--- TOC entry 2755 (class 1259 OID 20634)
+-- TOC entry 2755 (class 1259 OID 20835)
 -- Name: account_fk_account_access_idx; Type: INDEX; Schema: public; Owner: postgres
 --
 
@@ -700,7 +703,7 @@ CREATE INDEX account_fk_account_access_idx ON public.account USING btree (access
 
 
 --
--- TOC entry 2779 (class 1259 OID 20732)
+-- TOC entry 2779 (class 1259 OID 20933)
 -- Name: bill_fk_order_id_idx; Type: INDEX; Schema: public; Owner: postgres
 --
 
@@ -708,7 +711,7 @@ CREATE INDEX bill_fk_order_id_idx ON public.bill USING btree (order_id);
 
 
 --
--- TOC entry 2787 (class 1259 OID 20772)
+-- TOC entry 2787 (class 1259 OID 20973)
 -- Name: command_line_fk_article_id_idx; Type: INDEX; Schema: public; Owner: postgres
 --
 
@@ -716,7 +719,7 @@ CREATE INDEX command_line_fk_article_id_idx ON public.command_line USING btree (
 
 
 --
--- TOC entry 2788 (class 1259 OID 20771)
+-- TOC entry 2788 (class 1259 OID 20972)
 -- Name: command_line_fk_order_id_idx; Type: INDEX; Schema: public; Owner: postgres
 --
 
@@ -724,7 +727,7 @@ CREATE INDEX command_line_fk_order_id_idx ON public.command_line USING btree (or
 
 
 --
--- TOC entry 2769 (class 1259 OID 20690)
+-- TOC entry 2769 (class 1259 OID 20891)
 -- Name: customer_fk_customer_account_idx; Type: INDEX; Schema: public; Owner: postgres
 --
 
@@ -732,7 +735,7 @@ CREATE INDEX customer_fk_customer_account_idx ON public.customer USING btree (ac
 
 
 --
--- TOC entry 2782 (class 1259 OID 20754)
+-- TOC entry 2782 (class 1259 OID 20955)
 -- Name: delivery_fk_client_id_idx; Type: INDEX; Schema: public; Owner: postgres
 --
 
@@ -740,7 +743,7 @@ CREATE INDEX delivery_fk_client_id_idx ON public.delivery USING btree (id_client
 
 
 --
--- TOC entry 2783 (class 1259 OID 20753)
+-- TOC entry 2783 (class 1259 OID 20954)
 -- Name: delivery_fk_employee_id_idx; Type: INDEX; Schema: public; Owner: postgres
 --
 
@@ -748,7 +751,7 @@ CREATE INDEX delivery_fk_employee_id_idx ON public.delivery USING btree (employe
 
 
 --
--- TOC entry 2784 (class 1259 OID 20755)
+-- TOC entry 2784 (class 1259 OID 20956)
 -- Name: delivery_fk_order_id_idx; Type: INDEX; Schema: public; Owner: postgres
 --
 
@@ -756,7 +759,7 @@ CREATE INDEX delivery_fk_order_id_idx ON public.delivery USING btree (order_id);
 
 
 --
--- TOC entry 2765 (class 1259 OID 20679)
+-- TOC entry 2765 (class 1259 OID 20880)
 -- Name: orders_fk_order_status_id_idx; Type: INDEX; Schema: public; Owner: postgres
 --
 
@@ -764,7 +767,7 @@ CREATE INDEX orders_fk_order_status_id_idx ON public.orders USING btree (status)
 
 
 --
--- TOC entry 2766 (class 1259 OID 20678)
+-- TOC entry 2766 (class 1259 OID 20879)
 -- Name: orders_fk_restaurant_id_idx; Type: INDEX; Schema: public; Owner: postgres
 --
 
@@ -772,7 +775,7 @@ CREATE INDEX orders_fk_restaurant_id_idx ON public.orders USING btree (restauran
 
 
 --
--- TOC entry 2775 (class 1259 OID 20720)
+-- TOC entry 2775 (class 1259 OID 20921)
 -- Name: quantity_ingredient_recipe_fk_ingredient_id_idx; Type: INDEX; Schema: public; Owner: postgres
 --
 
@@ -780,7 +783,7 @@ CREATE INDEX quantity_ingredient_recipe_fk_ingredient_id_idx ON public.quantity_
 
 
 --
--- TOC entry 2776 (class 1259 OID 20721)
+-- TOC entry 2776 (class 1259 OID 20922)
 -- Name: quantity_ingredient_recipe_fk_recipe_id_idx; Type: INDEX; Schema: public; Owner: postgres
 --
 
@@ -788,7 +791,7 @@ CREATE INDEX quantity_ingredient_recipe_fk_recipe_id_idx ON public.quantity_ingr
 
 
 --
--- TOC entry 2772 (class 1259 OID 20704)
+-- TOC entry 2772 (class 1259 OID 20905)
 -- Name: recipe_fk_article_id_idx; Type: INDEX; Schema: public; Owner: postgres
 --
 
@@ -796,7 +799,7 @@ CREATE INDEX recipe_fk_article_id_idx ON public.recipe USING btree (article_id);
 
 
 --
--- TOC entry 2758 (class 1259 OID 20655)
+-- TOC entry 2758 (class 1259 OID 20856)
 -- Name: staff_fk_account_employee_idx; Type: INDEX; Schema: public; Owner: postgres
 --
 
@@ -804,7 +807,7 @@ CREATE INDEX staff_fk_account_employee_idx ON public.staff USING btree (account_
 
 
 --
--- TOC entry 2759 (class 1259 OID 20656)
+-- TOC entry 2759 (class 1259 OID 20857)
 -- Name: staff_fk_restaurant_id_idx; Type: INDEX; Schema: public; Owner: postgres
 --
 
@@ -812,7 +815,7 @@ CREATE INDEX staff_fk_restaurant_id_idx ON public.staff USING btree (restaurant_
 
 
 --
--- TOC entry 2760 (class 1259 OID 20657)
+-- TOC entry 2760 (class 1259 OID 20858)
 -- Name: staff_fk_staff_profession_id_idx; Type: INDEX; Schema: public; Owner: postgres
 --
 
@@ -820,7 +823,7 @@ CREATE INDEX staff_fk_staff_profession_id_idx ON public.staff USING btree (profe
 
 
 --
--- TOC entry 2791 (class 1259 OID 20794)
+-- TOC entry 2791 (class 1259 OID 20995)
 -- Name: stock_fk_article_id_idx; Type: INDEX; Schema: public; Owner: postgres
 --
 
@@ -828,7 +831,7 @@ CREATE INDEX stock_fk_article_id_idx ON public.stock USING btree (article_id);
 
 
 --
--- TOC entry 2792 (class 1259 OID 20795)
+-- TOC entry 2792 (class 1259 OID 20996)
 -- Name: stock_fk_ingredient_id_idx; Type: INDEX; Schema: public; Owner: postgres
 --
 
@@ -836,7 +839,7 @@ CREATE INDEX stock_fk_ingredient_id_idx ON public.stock USING btree (ingredient_
 
 
 --
--- TOC entry 2793 (class 1259 OID 20793)
+-- TOC entry 2793 (class 1259 OID 20994)
 -- Name: stock_fk_restaurant_id_idx; Type: INDEX; Schema: public; Owner: postgres
 --
 
@@ -844,7 +847,7 @@ CREATE INDEX stock_fk_restaurant_id_idx ON public.stock USING btree (restaurant_
 
 
 --
--- TOC entry 2796 (class 2606 OID 20629)
+-- TOC entry 2796 (class 2606 OID 20830)
 -- Name: account account_access_rights_fkey; Type: FK CONSTRAINT; Schema: public; Owner: postgres
 --
 
@@ -853,7 +856,7 @@ ALTER TABLE ONLY public.account
 
 
 --
--- TOC entry 2806 (class 2606 OID 20727)
+-- TOC entry 2806 (class 2606 OID 20928)
 -- Name: bill bill_order_id_fkey; Type: FK CONSTRAINT; Schema: public; Owner: postgres
 --
 
@@ -862,7 +865,7 @@ ALTER TABLE ONLY public.bill
 
 
 --
--- TOC entry 2810 (class 2606 OID 20761)
+-- TOC entry 2810 (class 2606 OID 20962)
 -- Name: command_line command_line_article_id_fkey; Type: FK CONSTRAINT; Schema: public; Owner: postgres
 --
 
@@ -871,7 +874,7 @@ ALTER TABLE ONLY public.command_line
 
 
 --
--- TOC entry 2811 (class 2606 OID 20766)
+-- TOC entry 2811 (class 2606 OID 20967)
 -- Name: command_line command_line_order_id_fkey; Type: FK CONSTRAINT; Schema: public; Owner: postgres
 --
 
@@ -880,7 +883,7 @@ ALTER TABLE ONLY public.command_line
 
 
 --
--- TOC entry 2802 (class 2606 OID 20685)
+-- TOC entry 2802 (class 2606 OID 20886)
 -- Name: customer customer_account_id_fkey; Type: FK CONSTRAINT; Schema: public; Owner: postgres
 --
 
@@ -889,7 +892,7 @@ ALTER TABLE ONLY public.customer
 
 
 --
--- TOC entry 2808 (class 2606 OID 20743)
+-- TOC entry 2808 (class 2606 OID 20944)
 -- Name: delivery delivery_employee_id_fkey; Type: FK CONSTRAINT; Schema: public; Owner: postgres
 --
 
@@ -898,7 +901,7 @@ ALTER TABLE ONLY public.delivery
 
 
 --
--- TOC entry 2807 (class 2606 OID 20738)
+-- TOC entry 2807 (class 2606 OID 20939)
 -- Name: delivery delivery_id_client_fkey; Type: FK CONSTRAINT; Schema: public; Owner: postgres
 --
 
@@ -907,7 +910,7 @@ ALTER TABLE ONLY public.delivery
 
 
 --
--- TOC entry 2809 (class 2606 OID 20748)
+-- TOC entry 2809 (class 2606 OID 20949)
 -- Name: delivery delivery_order_id_fkey; Type: FK CONSTRAINT; Schema: public; Owner: postgres
 --
 
@@ -916,7 +919,7 @@ ALTER TABLE ONLY public.delivery
 
 
 --
--- TOC entry 2800 (class 2606 OID 20668)
+-- TOC entry 2800 (class 2606 OID 20869)
 -- Name: orders orders_restaurant_id_fkey; Type: FK CONSTRAINT; Schema: public; Owner: postgres
 --
 
@@ -925,7 +928,7 @@ ALTER TABLE ONLY public.orders
 
 
 --
--- TOC entry 2801 (class 2606 OID 20673)
+-- TOC entry 2801 (class 2606 OID 20874)
 -- Name: orders orders_status_fkey; Type: FK CONSTRAINT; Schema: public; Owner: postgres
 --
 
@@ -934,7 +937,7 @@ ALTER TABLE ONLY public.orders
 
 
 --
--- TOC entry 2804 (class 2606 OID 20710)
+-- TOC entry 2804 (class 2606 OID 20911)
 -- Name: quantity_ingredient_recipe quantity_ingredient_recipe_ingredient_id_fkey; Type: FK CONSTRAINT; Schema: public; Owner: postgres
 --
 
@@ -943,7 +946,7 @@ ALTER TABLE ONLY public.quantity_ingredient_recipe
 
 
 --
--- TOC entry 2805 (class 2606 OID 20715)
+-- TOC entry 2805 (class 2606 OID 20916)
 -- Name: quantity_ingredient_recipe quantity_ingredient_recipe_recipe_id_fkey; Type: FK CONSTRAINT; Schema: public; Owner: postgres
 --
 
@@ -952,7 +955,7 @@ ALTER TABLE ONLY public.quantity_ingredient_recipe
 
 
 --
--- TOC entry 2803 (class 2606 OID 20699)
+-- TOC entry 2803 (class 2606 OID 20900)
 -- Name: recipe recipe_article_id_fkey; Type: FK CONSTRAINT; Schema: public; Owner: postgres
 --
 
@@ -961,7 +964,7 @@ ALTER TABLE ONLY public.recipe
 
 
 --
--- TOC entry 2797 (class 2606 OID 20640)
+-- TOC entry 2797 (class 2606 OID 20841)
 -- Name: staff staff_account_id_fkey; Type: FK CONSTRAINT; Schema: public; Owner: postgres
 --
 
@@ -970,7 +973,7 @@ ALTER TABLE ONLY public.staff
 
 
 --
--- TOC entry 2798 (class 2606 OID 20645)
+-- TOC entry 2798 (class 2606 OID 20846)
 -- Name: staff staff_profession_title_fkey; Type: FK CONSTRAINT; Schema: public; Owner: postgres
 --
 
@@ -979,7 +982,7 @@ ALTER TABLE ONLY public.staff
 
 
 --
--- TOC entry 2799 (class 2606 OID 20650)
+-- TOC entry 2799 (class 2606 OID 20851)
 -- Name: staff staff_restaurant_id_fkey; Type: FK CONSTRAINT; Schema: public; Owner: postgres
 --
 
@@ -988,7 +991,7 @@ ALTER TABLE ONLY public.staff
 
 
 --
--- TOC entry 2812 (class 2606 OID 20778)
+-- TOC entry 2812 (class 2606 OID 20979)
 -- Name: stock stock_article_id_fkey; Type: FK CONSTRAINT; Schema: public; Owner: postgres
 --
 
@@ -997,7 +1000,7 @@ ALTER TABLE ONLY public.stock
 
 
 --
--- TOC entry 2813 (class 2606 OID 20783)
+-- TOC entry 2813 (class 2606 OID 20984)
 -- Name: stock stock_ingredient_id_fkey; Type: FK CONSTRAINT; Schema: public; Owner: postgres
 --
 
@@ -1006,7 +1009,7 @@ ALTER TABLE ONLY public.stock
 
 
 --
--- TOC entry 2814 (class 2606 OID 20788)
+-- TOC entry 2814 (class 2606 OID 20989)
 -- Name: stock stock_restaurant_id_fkey; Type: FK CONSTRAINT; Schema: public; Owner: postgres
 --
 
@@ -1014,7 +1017,7 @@ ALTER TABLE ONLY public.stock
     ADD CONSTRAINT stock_restaurant_id_fkey FOREIGN KEY (restaurant_id) REFERENCES public.restaurant(id);
 
 
--- Completed on 2020-05-03 15:29:05
+-- Completed on 2020-05-09 11:34:35
 
 --
 -- PostgreSQL database dump complete

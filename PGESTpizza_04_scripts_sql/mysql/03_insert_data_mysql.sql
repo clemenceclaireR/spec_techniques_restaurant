@@ -1,3 +1,7 @@
+-- ---------- command for command line ------------
+-- mysql -u <user> -p < 03_insert_data_mysql.sql  --
+
+
 USE oc_restaurant;
 
 INSERT INTO restaurant
@@ -93,7 +97,7 @@ VALUES
 
 INSERT INTO article
 (
-	id, name, EAN13_code, unit_price_excluding_VAT, unit_price_including_VAT, designation
+	id, name, ean13_code, unit_price_excluding_VAT, unit_price_including_VAT, designation
 )
 VALUES
 	(1, 'Pizza Margherita', 1234567, 7, 7.7, 'Pizza 30cm margherita'),
@@ -228,7 +232,7 @@ VALUES
 
 INSERT INTO bill
 (
-	number_id, numVAT, num_siren, price_excluding_VAT, price_including_VAT, bill_date, street, city, postal_code, order_id
+	number_id, num_vat, num_siren, price_excluding_vat, price_including_vat, bill_date, street, city, postal_code, order_id
 )
 VALUES
 	(0123456, 012345678, 123456789, 11, 12.1, '2020-04-12 16:08:00', '10, Rue de Strasbourg', 99555, 'Ville-sur-test', 1),

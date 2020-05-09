@@ -1,3 +1,7 @@
+-- ------ command for command line -----------------
+-- mysql -u <user> -p < 02_create_tables_mysql.sql --
+
+USE `oc_restaurant` ;
 
 -- -----------------------------------------------------
 -- Table `oc_restaurant`.`access_rights`
@@ -175,7 +179,7 @@ ENGINE = InnoDB;
 -- -----------------------------------------------------
 CREATE TABLE IF NOT EXISTS `oc_restaurant`.`bill` (
   `number_id` INT NOT NULL,
-  `numVAT` INT NOT NULL,
+  `num_vat` INT NOT NULL,
   `num_siren` INT NOT NULL,
   `price_excluding_vat` DECIMAL(10,2) NOT NULL,
   `price_including_vat` DECIMAL(10,2) NOT NULL,
@@ -316,4 +320,3 @@ CREATE TABLE IF NOT EXISTS `oc_restaurant`.`command_line` (
     ON DELETE NO ACTION
     ON UPDATE NO ACTION)
 ENGINE = InnoDB;
-

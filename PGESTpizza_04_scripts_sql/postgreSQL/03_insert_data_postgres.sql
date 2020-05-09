@@ -1,3 +1,6 @@
+-- ------- command with command line ----------
+-- psql -U postgres -h localhost -d oc_restaurant -f 03_insert_data_postgres.sql 
+
 --
 -- Dumping data for table `access_rights`
 --
