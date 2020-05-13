@@ -1,5 +1,4 @@
 'Sélectionner tous les employés d\'un restaurant'
-
 SELECT staff.id FROM staff INNER JOIN restaurant ON restaurant.id = 1 WHERE staff.restaurant_id = 1;
 
 'Sélectionner les noms et prenoms tous les comptes où les drois d\'acces sont Customer'
@@ -13,7 +12,7 @@ INNER JOIN orders ON orders.id = delivery.order_id
 INNER JOIN status ON status.id = orders.status 
 INNER JOIN account ON account.id = customer.account_id;
 
-'Rechercher la recette d\'un article'
+'Rechercher la recette d\'un article (pizza napolitaine)'
 SELECT recipe.recipe FROM recipe INNER JOIN article ON recipe.article_id = article.id AND article.id = 4;
 
 'Rechercher le prix hors taxe d\'un article en commande'
@@ -42,3 +41,6 @@ SELECT stock.id, stock.article_id, stock.ingredient_id FROM stock INNER JOIN res
 
 'Afficher tous les stocks périmés de tous les restaurants'
 SELECT stock.id, stock.article_id, stock.ingredient_id FROM stock WHERE stock.expiry_date < now();
+
+'Afficher tous les stocks périmés d\'restaurant'
+SELECT stock.id, stock.article_id, stock.ingredient_id FROM stock INNER JOIN restaurant ON stock.restaurant_id = restaurant.id WHERE restaurant.id = 4 AND stock.expiry_date < now();

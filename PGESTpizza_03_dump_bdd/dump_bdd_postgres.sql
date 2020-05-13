@@ -27,7 +27,7 @@ DROP DATABASE oc_restaurant;
 -- Name: oc_restaurant; Type: DATABASE; Schema: -; Owner: oc_user
 --
 
-CREATE DATABASE oc_restaurant WITH TEMPLATE = template0 ENCODING = 'UTF8' LC_COLLATE = 'French_France.1252' LC_CTYPE = 'French_France.1252';
+CREATE DATABASE oc_restaurant WITH TEMPLATE = template0 ENCODING = 'UTF8' LC_COLLATE = 'en_US.UTF-8' LC_CTYPE = 'en_US.UTF-8';
 
 
 ALTER DATABASE oc_restaurant OWNER TO oc_user;
